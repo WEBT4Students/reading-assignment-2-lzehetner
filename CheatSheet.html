@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CheatSheet</title>
+    </head>
+    <body>
+        <center><h2><b>Reading Assignment 2: WWW and html</b></h2></center>
+
+        <h3><i>HTML</i></h3>
+        <ol>
+            <li>
+                <b><u>Name the components of html elements properly</u></b>
+                <br>
+                The components of html elements are Start-Tag, maybe an Attribute, element content and End-Tag
+            </li>
+            <br>
+            <li>
+                <b><u>Identify void elements and how they are denoted</u></b>
+                <br> 
+                HTML elements with no content are called void elements. It is closed in its Start-Tag, seen by the slash at the end. The slash can also be omitted(=weggelassen). An example is "br"
+            </li>
+            <br>
+            <li>
+                <b><u>Identify attributes</b></u>
+                <br>
+                Attributes provide additional information about elements. All HTML elements can have them. Attributes are always specified in the start tag
+            </li>
+            <br>
+            <li>
+                <b><u>Write down the correct DOCTYPE declaration for html 5</b></u>
+                <br>
+                    The declaration is not an HTML tag. It is an "information" to the browser about what document type to expect("!DOCTYPE html")
+            </li>
+            <br>
+            <li>
+                <b><u>Write down syntactically correct statements for the following elements</b></u>
+                <br>
+            <ul>
+                <li><b>Article (article)</b></li>
+                    Potential sources for the "article" element: Forum -, Blog Post and News Story
+                <br>
+                <li><b>Body (body)</b></li>
+                    The "body" element contains all the contents of an HTML document, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
+                <br><b><em>Note:</em></b> There can only be on body in an HTML document
+                <br>
+                <li><b>line break (br/)</b></li>
+                    The "br" tag is an empty tag which means that it has no end tag
+                <br>
+                <li><b>Headings (h1, ...)</b></li>
+                    "h1" defines the most important heading. "h6" defines the least important heading
+                <br>
+                <li><b>Section with meta-information (head)</b></li>
+                    The "head" element is a container for metadata (data about data) and is placed between the "html" tag and the "body" tag
+                <br>
+                <li><b>Top level element (html)</b></li>
+                    The "html" tag represents the root of an HTML document
+                <br>
+                <li><b>Image named Team.jpg (img src="Team.jpg")</b></li>
+                    Images are not technically inserted into a web page; images are linked to web pages. The "img" tag creates a holding space for the referenced image
+                <br>
+                <li><b>Paragraph (p)</b></li>
+                    The "p" tag defines a paragraph
+                <br>
+                <li><b>Section (section)</b></li>
+                    The "section" tag defines a section in a document.
+                <br>
+                <li><b>Label appearing in the title bar (title)</b></li>
+                    The "title" tag defines the title of the document. The title must be text-only, and it is shown in the browser's title bar or in the page's tab
+                    The "title" tag is required in HTML documents
+                <br>
+                <li><b>Link to other pages (a)</b></li>
+                    The "a" tag defines a hyperlink, which is used to link from one page to another
+                <br>
+                <li><b>Comment</b></li>
+                    "!--...--"
+                <br>
+                <li><b>Head with title and meta elements</b></li>
+                    The HTML "head" element is a container for the following elements: "title", "style", "meta", "link", "script", and "base".
+            </ul>
+            </li>
+        </ol>
+
+        <h3><i>CSS</i></h3>
+        <ol>
+            <li>
+                <b><u>Name the components of a css rule properly</u></b>
+                <br>
+                The selector points to the HTML element you want to style<br>
+                The declaration block contains one or more declarations separated by semicolons<br>
+                Each declaration includes a CSS property name and a value, separated by a colon <br>
+                ultiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces
+            </li>
+            <br>
+            <li>
+                <b><u>Use combinators properly: direct child, descendant, adjacent sibling, sibling</u></b>
+                <br>
+                <ul>
+                    <li><b>descendant selector (space) </b>The descendant selector matches all elements that are descendants of a specified element<br><u>Example</u>: div p {background-color: yellow;}</li><br>
+                    <li><b>child selector (>) </b>The child selector selects all elements that are the children of a specified element<br><u>Example</u>: div ">" p {background-color: yellow;}</li><br>
+                    <li><b>adjacent sibling selector (+) </b>The adjacent sibling selector is used to select an element that is directly after another specific element<br>Sibling elements must have the same parent element, and "adjacent" means "immediately following"<br><u>Example</u>: div "+" p {background-color: yellow;}</li><br>
+                    <li><b>general sibling selector (~) </b>The general sibling selector selects all elements that are next siblings of a specified element<br><u>Example</u>: div "~" p {background-color: yellow;}</li><br>
+                </ul>
+            </li>
+            <br>
+            <li>
+                <b><u>Specify colors by color names and in hexadecimal notation</u></b>
+                <br>
+                For example, to specify white color you can write #FFFFFF or #ffffff
+            </li>
+            <br>
+            <li>
+                <b><u>Declarations for color, background color</u></b>
+                <br>
+                <ul>
+                    <li><b>color names: </b>background-color: green;</li>
+                    <li><b>hex values: </b>background-color: #46f2e1;</li>
+                    <li><b>rgb(): </b>background-color: rgb(25, 31, 52);</li>
+                    <li><b>rgba() to add transparency: </b>background-color: rgb(25, 31, 52, 0.8);</li>
+                    <li><b>hsl(): </b>background-color: hsl(227, 33%, 22%);</li>
+                    <li><b>hsla() to add transparency: </b>background-color: hsla(227, 33%, 22%, 50%);</li>
+                    <li><b>hwb(): </b>background-color: hwb(222 22% 9%);;</li>
+                    <li><b>lab(): </b>background-color: lab(74.19% -20.68 -29.03);</li>
+                    <li><b>lch(): </b>background-color: lch(59.65% 68.2 22.81);</li>
+                    <li><b>color(): </b>background-color: color(display-p3 0.75 0.5 0.523);</li>
+
+                </ul>
+            </li>
+            <br>
+            <li>
+                <b><u>Pseudo classes for the "a" element</u></b>
+                <br>
+                <b>a:link => unvisited link</b><br>
+                <b>a:visited => visited link</b><br>
+                <b>a:hover => mouse over link</b><br>
+                <b>a:active => selected link</b>
+            </li>
+            <br>
+            <li>
+                <b><u>Declaration for background image</u></b>
+                <br>
+                <ul>
+                    <b><li>background-color</li><br>
+                    <li>background-image</li><br>
+                    <li>background-repeat</li><br>
+                    <li>background-attachment</li><br>
+                    <li>background-position</li></b><br>
+                </ul>
+                <u>Example</u>: background: #ffffff url("img_tree.png") no-repeat right top;
+            </li>
+            <br>
+            <li>
+                <b><u>Declaration for text alignment (left, right, center, justify)</u></b>
+                <br>
+                div {text-align: right|left|center|justify}
+            </li>
+            <br>
+            <li>
+                <b><u>Declaration for text decoration (overline, underline, line-through)</u></b>
+                <br>
+                The text-decoration property specifies the decoration added to text, and is a shorthand property for:
+                <br>
+                <ul>
+                    <li>text-decoration-line (required)</li><br>
+                    <li>text-decoration-color</li><br>
+                    <li>text-decoration-style</li><br>
+                    <li>text-decoration-thickness</li><br>
+                </ul>
+                <u>Example</u>: h3{text-decoration: overline;}
+            </li>
+            <br>
+            <li>
+                <b><u>Declaration for text transformation (uppercase, lowercase, capitalize)</u></b>
+                <br>
+                The text-transform property controls the capitalization of text.<br>
+                div {text-transform: none|capitalize|uppercase|lowercase;}
+            </li>
+            <br>
+            <li>
+                <b><u>Identify the difference between serif and sans-serif fonts</u></b>
+                <br>
+                <b>Serif:</b> fonts have a small stroke at the edges of each letter. They create a sense of formality and elegance<br>
+                <b>Sans-Serif: fonts have clean lines (no small strokes attached). They create a modern and minimalistic look.</b>
+                
+            </li>
+            <br>
+            <li>
+                <b><u>Declarations for font families</u></b>
+                <br>
+                The font-family property can hold several font names as a "fallback" system. If the browser does not support the first font, it tries the next font<br>
+                <u>Example</u>: p {font-family: "Times New Roman", Times, serif;}
+            </li>
+            <br>
+            <li>
+                <b><u>Declarations for font style normal and italic</u></b>
+                <br>
+                <b>normal:</b> The browser displays a normal font style. This is default<br>
+                <b>italic</b> The browser displays an italic font style<br>
+                <u>Example</u>: p {font-style: normal|italic;}
+            </li>
+            <br>
+            <li>
+                <b><u>Declarations for font sizes</u></b>
+                <br>
+                The font-size property sets the size of a font.<br>
+                <u>Example</u>: div {font-size: medium|xx-small|x-small|small|large|x-large|xx-large|smaller|larger|length|initial|inherit;}
+            </li>
+            <br>
+            <li>
+                <b><u>Declarations for font weights</u></b>
+                <br>
+                The font-weight property sets how thick or thin characters in text should be displayed<br>
+                <u>Example</u>: p {font-weight: normal|bold|bolder|lighter|number|initial|inherit;; }
+            </li>
+            
+        </ol>
+    </body>
+</html>
